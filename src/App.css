@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root{
+    --bg: #23252C;
+    --layout-bg: #1A1B21;
+    --description-color: #DCDCDC;
+    --subTitle-color: #F5F5F5;
+    --job_subtitle-color: #F3BF99;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    background: var(--bg);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app_container{
+    background: var(--layout-bg);
+    color: white;
+    width: 70%;
+    max-width: 400px;
+    margin: 36px auto;
+    font-family: 'Inter', sans-serif;
+    border-radius: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+   padding: 0 34px;
+   margin: 1.5rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-container{
+    text-align: center;
+}
+
+.profileImage{
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.name_title{
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+.job_title{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--job_subtitle-color);
+    margin: 0;
+}
+
+.website_title{
+    font-size: 0.6rem;
+    color: var(--subTitle-color)
+}
+
+.info_links_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_link{
+    text-decoration: none;
+    width: 8rem;
+    padding: 9px 0;
+    border-radius: 6px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_link + .info_link{
+    margin-left: 1.1rem;
+}
+
+.email_link{
+    background: white;
+    color: #374151;
+}
+
+.links_img{
+    width: 1rem;
+    margin-right: 0.4rem;
+}
+
+.linkedin_link{
+    background: #5093E2;
+    color: white;
+}
+
+.section_container *{
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+}
+
+.section_title{
+    color: var(--subTitle-color);
+    font-size: 1rem;
+
+}
+
+.section_description{
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: var(--description-color);
+    
+}
+
+.footer_container{
+background: #161619;
+padding: 19px 74px;
+display: flex;
+justify-content: space-between;
+    border-radius: 0 0 12px 12px;
+}
+
+.footer_container img{
+    width: 25px;
 }
